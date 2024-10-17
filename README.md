@@ -1,2 +1,2 @@
 # Finance Friend
-CS151 Term Project - Personal Budgeting Software
+Created by: Anthony Nguyen, Connor Linville, Jonathan Qu, Devin Taing
