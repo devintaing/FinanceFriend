@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="835.0" prefWidth="1379.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="835.0" prefWidth="1506.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="titlelabel" layoutX="18.0" layoutY="286.0" prefHeight="44.0" prefWidth="462.0" text="FINANCE FRIEND" textFill="#007bff">
+               <font>
+                  <Font name="Tamil MN Bold" size="36.0" />
+               </font></Label>
+            <Label fx:id="addAccountLabel" layoutX="33.0" layoutY="353.0" prefHeight="79.0" prefWidth="417.0" text="Add Account">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font></Label>
+            <TextField layoutX="760.0" layoutY="255.0" prefHeight="61.0" prefWidth="566.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="764.0" layoutY="199.0" text="Account Name (required)">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="759.0" layoutY="333.0" text="Opening Date (required)">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="760.0" layoutY="378.0" prefHeight="61.0" prefWidth="566.0" />
+            <Label layoutX="763.0" layoutY="455.0" text="Opening Balance (required)">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField layoutX="760.0" layoutY="511.0" prefHeight="61.0" prefWidth="566.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
