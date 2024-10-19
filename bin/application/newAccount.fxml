@@ -1,50 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="835.0" prefWidth="1379.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
-   <right>
-      <AnchorPane prefHeight="835.0" prefWidth="1506.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label fx:id="titlelabel" layoutX="18.0" layoutY="286.0" prefHeight="44.0" prefWidth="462.0" text="FINANCE FRIEND" textFill="#007bff">
-               <font>
-                  <Font name="Tamil MN Bold" size="36.0" />
-               </font></Label>
-            <Label fx:id="addAccountLabel" layoutX="33.0" layoutY="353.0" prefHeight="79.0" prefWidth="417.0" text="Add Account">
-               <font>
-                  <Font name="System Bold" size="64.0" />
-               </font></Label>
-            <TextField layoutX="760.0" layoutY="255.0" prefHeight="61.0" prefWidth="566.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </TextField>
-            <Label layoutX="764.0" layoutY="199.0" text="Account Name (required)">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="759.0" layoutY="333.0" text="Opening Date (required)">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Label>
-            <DatePicker layoutX="760.0" layoutY="378.0" prefHeight="61.0" prefWidth="566.0" />
-            <Label layoutX="763.0" layoutY="455.0" text="Opening Balance (required)">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Label>
-            <TextField layoutX="760.0" layoutY="511.0" prefHeight="61.0" prefWidth="566.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </TextField>
-         </children></AnchorPane>
-   </right>
-</BorderPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edebf6" height="720.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="720.0" layoutX="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+      <DatePicker layoutX="444.0" layoutY="292.0" prefHeight="40.0" prefWidth="550.0" promptText="MM/DD/YYYY" />
+      <TextField layoutX="444.0" layoutY="187.0" prefHeight="40.0" prefWidth="550.0" promptText="e.g. Chase Checking, BoA Savings, etc.">
+         <font>
+            <Font name="Inter Regular" size="16.0" />
+         </font></TextField>
+      <TextField layoutX="444.0" layoutY="399.0" prefHeight="40.0" prefWidth="550.0" promptText="\$15101.04">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button layoutX="90.0" layoutY="560.0" mnemonicParsing="false" onAction="#switchToHome" text="Home">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Text layoutX="444.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Account" wrappingWidth="402.0">
+         <font>
+            <Font name="Lato Bold" size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="439.0" layoutY="490.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="224.0" style="-fx-background-color: #1464f6;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Lato Regular" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="438.0" layoutY="577.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="43.0" prefWidth="116.0" style="-fx-background-color: #F55356;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Text layoutX="446.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening Balance (required)" wrappingWidth="261.0001220703125">
+         <font>
+            <Font name="Lato Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="447.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening Date (required)" wrappingWidth="261.0001220703125">
+         <font>
+            <Font name="Lato Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="446.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Name (required)" wrappingWidth="261.0001220703125">
+         <font>
+            <Font name="Lato Regular" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="192.0" fitWidth="288.0" layoutX="47.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Budget%20Buddy%20Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
