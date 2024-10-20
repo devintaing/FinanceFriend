@@ -53,6 +53,7 @@ public class Controller {
 	}
 	
 	public void submitButton(ActionEvent event) {
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         String name = accountName.getText().trim();
         String balanceStr = openingBalance.getText().trim();
         LocalDate date = openingDate.getValue();
@@ -82,7 +83,9 @@ public class Controller {
         saveAccount(name, date, balance);
 
         // Show success message
-        showAlert("Success, Account successfully added!");
+        alert.setTitle("Success");
+        alert.setHeaderText("Account successfully added!");
+        alert.showAndWait();
 	}
 	
     private void saveAccount(String name, LocalDate date, double balance) {
